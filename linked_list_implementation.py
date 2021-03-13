@@ -22,6 +22,9 @@ class LinkedList:
     def insert_at_index(self, index, data):
         previous = None
         current = self.head
+        if index == 0:
+            self.head = Node(data, self.head)
+            return
         while index > 0:
             previous = current
             current = current.next
