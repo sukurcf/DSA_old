@@ -1,5 +1,5 @@
 def insertion_sort(elements):
-    for i in range(len(elements)):
+    for i in range(1, len(elements)):
         anchor = elements[i]
         j = i - 1
         while anchor < elements[j] and j >= 0:
